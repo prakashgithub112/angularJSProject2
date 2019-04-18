@@ -30,7 +30,25 @@
      
   </tr>
   <tr>
-    <th >Staffing status</th>
+    <th>
+    <div>
+		<label>Summary: </label>
+		<select (change)="filterForeCasts($event.target.value)">
+		<option value="0">--All--</option>
+		<option>Available/Proposed</option>
+		<option>Bench allocation pending</option>		
+		<option>Bench - Allocated</option>
+		<option>Special - Bench</option>
+		<option>Bench - Leave</option>
+		<option>Bench - Resigned</option>
+		<option>Bench - Retagging within FS</option>
+		<option>Bench - Transfer</option>
+		<option>Bench - Absconding</option>
+		<option>Bench - Shadow
+		</option>
+		
+		</select>
+	</div></th>
     <th >count</th>
     <th >%</th>
     <th >count</th>

@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'DashBoard for Human Resource';
+  title = 'DashBoard for ADM Java';
 }

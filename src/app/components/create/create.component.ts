@@ -7,6 +7,7 @@ import { FormGroup,  FormBuilder,  Validators } from '@angular/forms';
   templateUrl: './create.component.html',
   styleUrls: ['./create.component.scss']
 })
+
 export class CreateComponent implements OnInit {
 title = 'Add Coin3';
 coin_name = '';
