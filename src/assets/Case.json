@@ -1,0 +1,58 @@
+[
+  {
+    "Patientage": 29,
+    "Patientname": "Moran",
+     "Drugs": [
+		{
+			"row1": "41",
+			"row2": "68.33%",
+			"row3": "8",	
+			"row4": "53.33%",
+			"row5": "55",
+			"row6": "78.57%",
+			"row7": "55",	
+			"row8": "66.27%",
+			"row9": "3 years",	
+			"row10": "Current",			
+			"row9": "3 years",	
+			"row10": "Current"
+			
+		},
+		{
+			"row1": "Dolo",
+			"row2": "150 mg daily",
+			"row3": "3 years",	
+			"row4": "Current",
+			"row5": "Dolo",
+			"row6": "150 mg daily",
+			"row7": "3 years",	
+			"row8": "Current",
+			"row9": "3 years",	
+			"row10": "Current",
+			"row9": "3 years",	
+			"row10": "Current"		
+		},
+		{
+			"row1": "Dolo",
+			"row2": "150 mg daily",
+			"row3": "3 years",	
+			"row4": "Current",
+			"row5": "Dolo",
+			"row6": "150 mg daily",
+			"row7": "3 years",	
+			"row8": "Current",
+			"row9": "3 years",	
+			"row10": "Current",
+			"row9": "3 years",	
+			"row10": "Current"		
+		}
+		],
+		"Reactions": [
+		{
+			"Start Date": "10-10-2017",
+			"End Date": "15-10-2017"   
+			
+		}
+		]
+  }
+]

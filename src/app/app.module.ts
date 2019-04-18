@@ -12,6 +12,7 @@ import { CoinService } from './coin.service';
 import {HttpClientModule} from '@angular/common/http';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
