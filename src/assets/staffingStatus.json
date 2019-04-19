@@ -1,0 +1,18 @@
+[
+  {
+     "staffingStatus": [
+		{
+			"option1":"Available/Proposed",
+			"option2":"Bench - Allocation Pending",
+			"option3":"Bench - Allocated",
+			"option4":"Special - Bench",
+			"option5":"Bench - Leave",
+			"option6":"Bench - Resigned",
+			"option7":"Bench - Retagging within FS",
+			"option8":"Bench - Transfer",
+			"option9":"Bench - Absconding",
+			"option10":"Bench - Shadow"
+		}
+		]
+  }
+]

@@ -35,17 +35,14 @@
 		<label>Summary: </label>
 		<select (change)="filterForeCasts($event.target.value)">
 		<option value="0">--All--</option>
-		<option>Available/Proposed</option>
-		<option>Bench allocation pending</option>		
-		<option>Bench - Allocated</option>
-		<option>Special - Bench</option>
-		<option>Bench - Leave</option>
-		<option>Bench - Resigned</option>
-		<option>Bench - Retagging within FS</option>
-		<option>Bench - Transfer</option>
-		<option>Bench - Absconding</option>
-		<option>Bench - Shadow
-		</option>
+		<option>{{staffingStatus[0]['option1']}}</option>
+		<option>{{staffingStatus[0]['option2']}}</option>
+		<option>{{staffingStatus[0]['option3']}}</option>
+		<option>{{staffingStatus[0]['option4']}}</option>
+		<option>{{staffingStatus[0]['option5']}}</option>
+		<option>{{staffingStatus[0]['option6']}}</option>
+		<option>{{staffingStatus[0]['option7']}}</option>
+		<option>{{staffingStatus[0]['option8']}}</option>
 		
 		</select>
 	</div></th>

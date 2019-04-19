@@ -20,6 +20,8 @@ angForm: FormGroup;
   }
   arrCase : object [];
     Drugs : object [];
+    staffingStatus : object [];
+    
   createForm() {
     this.angForm = this.fb.group({
       coin_name: ['', Validators.required ],
@@ -35,12 +37,26 @@ addCoin(coin_name, coin_price) {
       this.coinservice.addCoin(coin_name, coin_price);
   }
   ngOnInit() {
-  alert("Inside ngoniit");
+
   this.httpService.get('./assets/Case.json').subscribe(
         data => {
           let res = data[0];    
           this.Drugs = res['Drugs']; 
           console.log(this.Drugs);
+
+        },
+        (err: HttpErrorResponse) => {
+          console.log (err.message);
+        }
+      );
+      
+      
+      this.httpService.get('./assets/staffingStatus.json').subscribe(
+        data => {
+          let res = data[0];  
+          this.staffingStatus = res['staffingStatus']; 
+          console.log(this.staffingStatus);
+          alert(this.staffingStatus.length);
 
         },
         (err: HttpErrorResponse) => {

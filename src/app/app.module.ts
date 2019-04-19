@@ -10,6 +10,10 @@ import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CoinService } from './coin.service';
 import {HttpClientModule} from '@angular/common/http';
+import { OverAllDemandAgeinigComponent } from './components/overalldemandageinig/overalldemandageinig.component';
+import { OfferJoinedComponent } from './components/offerjoined/offerjoined.component';
+import { DemandExternalSupplyComponent } from './components/demandexternalsupply/demandexternalsupply.component';
+import { NewJoinersLastWeekComponent } from './components/newjoinerslastweek/newjoinerslastweek.component';
 
 
 
@@ -18,7 +22,11 @@ import {HttpClientModule} from '@angular/common/http';
     AppComponent,
     IndexComponent,
     CreateComponent,
-    EditComponent
+    EditComponent,
+    OverAllDemandAgeinigComponent,
+    OfferJoinedComponent,    
+    DemandExternalSupplyComponent,
+    NewJoinersLastWeekComponent
   ],
   imports: [
     BrowserModule,
