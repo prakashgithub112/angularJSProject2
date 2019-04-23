@@ -17,6 +17,7 @@ import { NewJoinersLastWeekComponent } from './components/newjoinerslastweek/new
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,

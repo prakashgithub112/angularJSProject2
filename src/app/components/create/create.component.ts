@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { CoinService } from '../../coin.service';
 import { FormGroup,  FormBuilder,  Validators } from '@angular/forms';
 import {HttpClient} from '@angular/common/http';
@@ -14,6 +14,9 @@ export class CreateComponent implements OnInit {
 title = 'Add Coin3';
 coin_name = '';
 coin_price = '';
+
+@Input() title2variable:string;
+
 angForm: FormGroup;
   constructor(private coinservice: CoinService,private fb: FormBuilder,private httpService: HttpClient) { 
   this.createForm();
