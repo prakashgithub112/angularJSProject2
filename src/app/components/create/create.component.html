@@ -2,8 +2,7 @@
 <div class="panel panel-primary">
     <div class="panel-heading">
       {{ title }}
-      Receiving the values from Parent
-      {{title2variable}}
+      Receiving the values from Parent app component=====>>{{title3variable}}
     </div>
     <div class="panel-body">
       <form [formGroup]="angForm" novalidate>
@@ -102,6 +101,7 @@
           <div class="form-group">
             <button (click)="addCoin(coin_name.value,coin_price.value)" class="btn btn-primary">Add1</button>
           </div>
+          <button (click)="sendMessage()">Send Message</button>
       </form>
     </div>
   </div>

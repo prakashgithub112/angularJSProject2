@@ -10,7 +10,7 @@ import { DemandExternalSupplyComponent } from './components/demandexternalsupply
 import { NewJoinersLastWeekComponent } from './components/newjoinerslastweek/newjoinerslastweek.component';
 
 export const appRoutes: Routes = [
-  { path: 'create', 
+  { path: 'create/:title2variable', 
     component: CreateComponent 
   },
   {
@@ -20,7 +20,7 @@ export const appRoutes: Routes = [
   { path: 'index',
     component: IndexComponent
   },
-  { path: 'overalldemandageinig',
+  { path: 'overalldemandageinig/:title2variable',
     component: OverAllDemandAgeinigComponent
   },
   { path: 'offerjoined',

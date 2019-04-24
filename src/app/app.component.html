@@ -28,9 +28,9 @@
   <div class="container-fluid">
     <ul class="nav navbar-nav">
       <li class="active">
-        <a routerLink="create" routerLinkActive="active">
+        <a routerLink="create/1234" routerLinkActive="active">
           Bench Summary
-        </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a routerLink="overalldemandageinig" routerLinkActive="active">
+        </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a routerLink="overalldemandageinig/1234" routerLinkActive="active">
           Overall Demand - Aging Summary
         </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a routerLink="offerjoined" routerLinkActive="active">
           Offer Joined Summary
@@ -46,6 +46,9 @@
 </nav>
   </div>
   <div class="container">
-  <app-create [title2variable]= "title2"></app-create>
+ 	<!-- <div>
+ 	<app-create [title2variable]= "title2"></app-create>
+  <app-create (messageEvent) = "receiveMessage($event)"></app-create>
+ </div> -->
 <router-outlet></router-outlet>
 </div>

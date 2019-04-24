@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import { FormGroup,FormBuilder,  Validators} from '@angular/forms';
 import {HttpErrorResponse} from '@angular/common/http';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-overalldemandageinig',
@@ -10,7 +11,11 @@ import {HttpErrorResponse} from '@angular/common/http';
 })
 export class OverAllDemandAgeinigComponent implements OnInit {
 angForm1: FormGroup;
-  constructor(private fb: FormBuilder,private httpService: HttpClient) { }
+title3variable = '';
+  constructor(private fb: FormBuilder,private httpService: HttpClient,private _Activatedroute:ActivatedRoute) { 
+  alert("Inside overalldemandagainig=="+ this._Activatedroute.snapshot.params['title2variable']);
+  this.title3variable = this._Activatedroute.snapshot.params['title2variable'];
+  }
   accountName : object [];
   
   ngOnInit() {
