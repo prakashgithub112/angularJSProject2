@@ -12,14 +12,18 @@ import { ActivatedRoute } from '@angular/router';
 export class OverAllDemandAgeinigComponent implements OnInit {
 angForm1: FormGroup;
 title3variable = '';
+myItem='';
+accountName : object [];
+  
   constructor(private fb: FormBuilder,private httpService: HttpClient,private _Activatedroute:ActivatedRoute) { 
-  alert("Inside overalldemandagainig=="+ this._Activatedroute.snapshot.params['title2variable']);
-  this.title3variable = this._Activatedroute.snapshot.params['title2variable'];
+	  	alert("Inside overalldemandagainig=="+ this._Activatedroute.snapshot.params['title2variable']);
+	  	alert("GET LOCAL STORAGE DATA==="+localStorage.getItem("item"));
+	  	this.myItem =localStorage.getItem("item");
+  		this.title3variable = this._Activatedroute.snapshot.params['title2variable'];
   }
-  accountName : object [];
+  
   
   ngOnInit() {
-
     this.httpService.get('./assets/accountName.json').subscribe(
         data => {
 

@@ -8,12 +8,16 @@ export class CoinService {
   constructor(private http: HttpClient) { }
 
   addCoin(coin_name, coin_price) {
-    const uri = 'http://localhost:4000/coins/add';
-    const obj = {
+  	alert("Adding coin data to local storage");
+  	
+  	const obj = {
       coin_name: coin_name,
       coin_price: coin_price
     };
-    this.http.post(uri, obj)
-        .subscribe(res => console.log('Done'));
+    
+  	//window.localStorage.set("saved_coin_data", JSON.stringify(obj));
+  	localStorage.setItem("item", JSON.stringify(obj));
+    alert("Adding coin data done");
+     
   }
 }

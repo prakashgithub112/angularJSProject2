@@ -14,6 +14,7 @@ import { OverAllDemandAgeinigComponent } from './components/overalldemandageinig
 import { OfferJoinedComponent } from './components/offerjoined/offerjoined.component';
 import { DemandExternalSupplyComponent } from './components/demandexternalsupply/demandexternalsupply.component';
 import { NewJoinersLastWeekComponent } from './components/newjoinerslastweek/newjoinerslastweek.component';
+import { CustomdirectiveDirective } from './customdirective.directive';
 
 
 
@@ -27,7 +28,8 @@ import { NewJoinersLastWeekComponent } from './components/newjoinerslastweek/new
     OverAllDemandAgeinigComponent,
     OfferJoinedComponent,    
     DemandExternalSupplyComponent,
-    NewJoinersLastWeekComponent
+    NewJoinersLastWeekComponent,
+    CustomdirectiveDirective
   ],
   imports: [
     BrowserModule,

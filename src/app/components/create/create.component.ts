@@ -14,26 +14,24 @@ import { ActivatedRoute } from '@angular/router';
 export class CreateComponent implements OnInit {
 
 message: string = "Hola Mundo!";
-
 @Output() messageEvent = new EventEmitter<string>();
-
 title = 'Add Coin3';
 title3variable = '';
+title5variable = '';
 coin_name = '';
 coin_price = '';
-
 @Input() title2variable:string;
-
 angForm: FormGroup;
-  constructor(private coinservice: CoinService,private fb: FormBuilder,private httpService: HttpClient,private _Activatedroute:ActivatedRoute) { 
-  alert(this._Activatedroute.snapshot.params['title2variable']);
+arrCase : object [];
+Drugs : object [];
+staffingStatus : object [];
+
+constructor(private coinservice: CoinService,private fb: FormBuilder,private httpService: HttpClient,private _Activatedroute:ActivatedRoute) { 
   this.title3variable = this._Activatedroute.snapshot.params['title2variable'];
+  this.title5variable = this._Activatedroute.snapshot.params['title5variable'];
   this.createForm();
   }
-  arrCase : object [];
-    Drugs : object [];
-    staffingStatus : object [];
-    
+
   createForm() {
     this.angForm = this.fb.group({
       coin_name: ['', Validators.required ],
@@ -43,19 +41,27 @@ angForm: FormGroup;
   
  
 sendMessage() {
-	alert("alert detected"+this.message);
+	alert("send message is clicked");
     this.messageEvent.emit(this.message)
   }
   
-addCoin(coin_name, coin_price) {
+	showvalues(coin_name, coin_price) {
+		alert("inside showvalues function");
+		
+      	this.coinservice.addCoin(coin_name, coin_price);
+  }
+  
+  addCoin(coin_name, coin_price) {
 	alert("coin name-->"+coin_name);
 	alert("coin price-->"+coin_price);
 	 
-      this.coinservice.addCoin(coin_name, coin_price);
+     // this.coinservice.addCoin(coin_name, coin_price);
   }
+  
   ngOnInit() {
-
-  this.httpService.get('./assets/Case.json').subscribe(
+  alert("Inside ng on init");
+  
+  	this.httpService.get('./assets/Case.json').subscribe(
         data => {
           let res = data[0];    
           this.Drugs = res['Drugs']; 
