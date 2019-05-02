@@ -4,6 +4,7 @@ import { FormGroup,  FormBuilder,  Validators } from '@angular/forms';
 import {HttpClient} from '@angular/common/http';
 import {HttpErrorResponse} from '@angular/common/http';
 import { ActivatedRoute } from '@angular/router';
+import { ValidateUrl } from '../../url.validator';
 
 @Component({
   selector: 'app-create',
@@ -35,7 +36,8 @@ constructor(private coinservice: CoinService,private fb: FormBuilder,private htt
   createForm() {
     this.angForm = this.fb.group({
       coin_name: ['', Validators.required ],
-      coin_price: ['', Validators.required ]
+      coin_price: ['', Validators.required ],
+      websiteUrl: ['', [Validators.required, ValidateUrl]]
    });
   }
   

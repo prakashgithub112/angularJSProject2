@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,6 +8,7 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
+
   title = 'DashBoard for ADM Java';
   title2 = "10cfnsdjkncfeksl";
   title2variable ="prakash";

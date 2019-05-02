@@ -101,6 +101,18 @@
             Coin Price is required.
         </div>
         </div>
+        <!-- new field to support custom valditor -->
+        <div class="form-group">
+          <label class="col-md-4">Wensite URL</label>
+          <input type="number" id="websiteUrl" class="form-control" name="websiteUrl" formControlName="websiteUrl" #websiteUrl/>
+          </div>
+        <div *ngIf="angForm.get('websiteUrl').errors &&
+     angForm.get('websiteUrl').dirty &&
+      angForm.get('websiteUrl').errors.ageRange">
+  Oops, only urls served over https and only from the .io top-level domain are accepted.
+  Talk about restrictions!
+</div>
+        
           <div class="form-group">
             <button (click)="showvalues(coin_name.value,coin_price.value)" class="btn btn-primary">Add1</button>
           </div>
